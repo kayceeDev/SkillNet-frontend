@@ -30,15 +30,15 @@ const CandidatesTabs = () => {
 
   return (
     <div className="mt-5 ml-10">
-      <header className="w-full md:p-4 p-1 flex flex-col md:flex-row items-center justify-start gap-4">
+      <header className="flex space-x-4 pb-2'">
         {tabs.map((tab) => (
           <button
             key={tab.id}
             onClick={() => setActiveTab(tab.id)}
-            className={`md:px-5 gap-2 md:py-3 py-2 w-full rounded-md border border-neutral-900 text-white cursor-pointer transition-all ${
-              activeTab === tab.id 
-                ? "bg-neutral-800" 
-                : "hover:bg-neutral-800"
+            className={`px-5 py-4 text-sm rounded-md font-medium ${
+              activeTab === tab.id
+                ? "bg-[#161716]  text-white"
+                : "hover:bg-neutral-800 text-gray-300"
             }`}
           >
             {tab.label}
