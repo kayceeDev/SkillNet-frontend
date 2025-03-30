@@ -28,9 +28,7 @@ const data: ICandidates[] = [
 
 const NewCandidates = () => {
   return (
-    <div className="overflow-x-auto font-sans text-sm px-5 mt-10">
       <CandidateTable candidates={data} />
-    </div>
   );
 };
 
